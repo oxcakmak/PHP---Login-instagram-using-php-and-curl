@@ -44,7 +44,7 @@ function login_inst() {
     //var_dump($page);
 
     // try to find the actual login form
-    if (!preg_match('/<form method="POST" id="login-form" class="adjacent".*?<\/form>/is', $page, $form)) {
+    if (!preg_match('/<form data-encrypt method="POST" id="login-form" class="adjacent".*?<\/form>/is', $page, $form)) {
         die('Failed to find log in form!');
     }
 
