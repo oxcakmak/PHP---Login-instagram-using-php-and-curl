@@ -15,7 +15,7 @@ function login_inst() {
 
     @unlink(dirname(__FILE__)."/".COOKIE);
 
-    $url="https://www.instagram.com/accounts/login/?force_classic_login";
+    $url="https://www.instagram.com/accounts/login/?force_authentication=1";
 
     $ch  = curl_init(); 
 
